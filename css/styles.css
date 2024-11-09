@@ -1,0 +1,149 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'menu main'
+        'footer footer';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+header {
+    grid-area: header;
+    border: 3px solid darkgray;
+    padding: 20px;
+    position: relative;
+}
+aside {
+    grid-area: menu;
+    background-color: lightgray;
+    padding: 5px;
+    border: 3px solid darkgray;
+    height: 300px;
+}
+main {
+    grid-area: main;
+    padding: 15px;
+}
+footer {
+    grid-area: footer;
+    background-color: darkgray;
+    padding: 10px;
+    text-align: center;
+}
+hr {
+    border: none;
+    height: 3px;
+    background-color: darkgray;
+    margin: 0;
+}
+h1 {
+    font-size: 3em;
+    color: #ff5733;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+
+/* Add borders to specific navigation items */
+nav ul li:nth-child(1) {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li:nth-child(2) {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li:nth-child(3) {
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Optional: Make sure the links fill the entire bordered area */
+nav ul li a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: lightgray;
+}
+
+.character-section {
+    margin-bottom: 40px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.character-section h3 {
+    margin-top: 0;
+}
+.character-section img {
+    float: left;
+    margin-right: 15px;
+}
+.character-section p {
+    font-size: 1.5em;
+    color: #ff5733;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    clear: both;
+}
+
+/* Video container styling */
+.video-container {
+    margin-bottom: 20px;
+    text-align: center;
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ad space border and video */
+.ad-space {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.ad-space p {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ad-space iframe {
+    max-width: 100%;
+    height: auto;
+}
